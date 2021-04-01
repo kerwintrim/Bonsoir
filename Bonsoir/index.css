@@ -1,0 +1,315 @@
+body{
+    font: 15px/1.5 Arial,Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(188, 219, 247);
+    text-align: left;
+}
+/* Adjusts placement of images(Global) */
+.container{
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.button_1{
+height: 35px;
+background: #4c8baf;
+border: none;
+padding-right: 20px;
+padding-left: 20px;
+color:#ffffff;
+}
+
+.dark{
+padding: 15px;
+background:#4c8baf;
+color:#ffffff;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+header{
+  background:#35424a;
+color: dodgerblue;
+padding-top: 40px;
+min-height: 90px;
+border-bottom: rgb(205, 68, 50) 3px solid;
+}
+
+header a{
+color: #ffffff;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 16px;
+
+}
+
+
+header .highlight , header .current a{
+color: #e44855;
+font-weight: bold;
+}
+
+ /*Navigation Bar*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 20px;
+  overflow: hidden;
+  background-color: #0c73b8;
+  text-align: center;
+  width: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(206, 18, 18);
+}
+
+.active {
+  background-color: #d1d1bd;
+}
+
+
+
+#showcase{
+    
+    
+  background: url('images/mountainsofhaiti.jpg') no-repeat 0 -200px;
+  text-align: center;
+  color:#0e0d0d;
+  /*max-width: 100%;
+  max-height: 100%;
+  min-height: 80vh;*/
+  background-size: cover;
+  font-weight: bold;
+  text-align: center;
+}
+
+#showcase h1{
+  margin-top: 100px;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+#showcase p{
+  font-size: 18px;
+
+}
+
+#showcase .highlight{
+  color: #0c2b80;
+font-weight: bold;
+
+}
+
+/* Subscribe plus email (newsletter) */
+
+#newsletter{
+    padding: 15px;
+    color:rgb(231, 15, 51);
+    text-align: right;
+   background:#35424a; 
+  }
+
+  #newsletter h1{
+    float: left;
+  }
+
+  #newsletter form{
+    float: right;
+    margin-top: 15px;
+  }
+
+  #newsletter input[type="email"]{
+    padding:4px;
+    height:30px;
+    width: 200px;
+  }
+
+  #letter{
+    text-align: left;
+  }
+  /* Images (boxes) */
+  #boxes{
+    margin-top: 22px;
+  }
+
+  /*#boxes .box{
+    float:inline-start;
+    width:30%;
+    /*text-align:right; 
+    padding: 10px;
+  } 
+
+  #boxes .box img{
+    width:500px;
+
+  } */
+
+  #summary{
+    text-align: left;
+  }
+
+  /*About */
+  #about{
+    text-align: left;
+  }
+
+
+/*Main-Col */
+  article#main-col{
+    float:'left';
+    width: 65%;
+
+  }
+
+/*Contact */
+ul#contact li{
+    list-style: none;
+    padding: 10%;
+    border: #cccccc solid 1px;
+    background: #35424a;
+  }
+  input, textarea{
+    border: solid 2px black;
+    padding-top: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .input{
+    width: 500px;
+    max-width: 80%;
+  }
+  textarea{
+    max-width: 100%;
+    width: 1000px;
+    height: 100px;
+  }
+
+  /* Experimenting with HighSlide */
+  .highslide-wrapper, .highslide-outline {
+    background: #FFFFFF;
+  }
+  .highslide img {
+    border: 1px solid #D0D0D0;
+  }
+  .highslide:hover img {
+    border-color: #A0A0A0;
+  }
+  .highslide-image {
+    border: 2px solid #FFFFFF;
+  }
+  .highslide-loading {
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+    background-image: url(graphics/loader.white.gif);
+  }
+ /* Experimenting with HighSlide for the About Page */
+ .highslide-wrapper, .highslide-outline {
+	background: #FFFFFF;
+}
+.highslide img {
+	border: 1px solid #D0D0D0;
+}
+.highslide:hover img {
+	border-color: #A0A0A0;
+}
+.highslide-active-anchor img {
+	visibility: visible;
+	border-color: #808080 !important;
+}
+.highslide-image {
+	border: 2px solid #FFFFFF;
+}
+.highslide-loading {
+	color: black;
+  object-fit: cover;
+	border: 1px solid black;
+	background-color: white;
+	background-image: url(graphics/loader.white.gif);
+}
+
+.highslide-controls {
+	position: static !important;
+	margin-bottom: 0;
+	width: 195px !important;
+}
+.highslide-gallery ul li {
+	width: 300px;
+	height: 300px;
+  object-fit: cover;
+	border: 2px solid #080808;
+	background: #070707;
+	/*margin: 2px;*/
+}
+
+ /*Experimenting with hs for about*/
+
+  /* Gallery (image animation) */
+  .preview {
+    width:640px;
+    height:360px}
+    
+    .thumb {
+    width:205px;
+    margin-right:3px;}
+    
+    .normal {
+    border:3px solid #000000;}
+    
+    .selected {
+    border:3px solid #ff0000;}
+
+  footer{
+    padding: 20px;
+    margin-top: 20px;
+    color:#ffffff;
+    background-color:#0c73b8 ;
+    text-align: center;
+    float: initial;
+    text-align: center;
+  }
+
+  /* Media Queries(Adjusted for comp & phone */
+  @media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+      float:none;
+      text-align:center;
+      width:100%;
+    }
+    header{
+      padding-bottom: 20px;
+    }
+    #showcase h1{
+      margin: top 40px;
+    }
+    #newsletter button, .quote button{
+      display: block;
+      width:100%;
+    }
+    #newsletter form input[type="email"], .quote input, .quote textarea{
+      width:100%;
+      margin-bottom: 5px; 
+    }
+  }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website showcasing Bonsoir">
+    <meta name="keywords"   content="Haiti, aid, relief, Website">
+    <meta name="author"    content="Kerwin Trim">
+    <title>Bonsoir Haiti</title>
+
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Bonsoir</span> Haiti</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="abouthaiti.html">About Haiti</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="active" href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="newsletter.html">Newsletter</a></li>
+                <li><a href="getinvolved.html">Get Involved</a></li>
+
+            </ul> 
+        </nav>
+    </header>
+
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Subscribe to the newsletter</h1>
+            <form>
+                <input type="email" placeholder="Enter Email..">
+                <button type="submit" class="button_1">Subscribe</button>
+            </form>
+        </div>
+    </section>
+    <section id="main">
+        <div class="container">
+           <article id="main-col">
+              <h1 class="page-title">Gallery</h1>
+              <p> Here is a glimpse into the work done by Joseph in Haiti.
+            </p>
+               <div>
+                   <img id="0" class="preview normal" src="" alt="preview" /><br />
+                   <img id="1" class="thumb normal"  src="./images/IMG_1926.jpg" width="200" height="200" onmouseover="preview(this)">
+                   <img id="2" class="thumb normal" src="./images/IMG_1927.jpg" width="200" height="200" onmouseover="preview(this)">
+                   <img id="3" class="thumb normal" src="./images/IMG_1928.jpg" width="200" height="200" onmouseover="preview(this)">
+                   <img id="4" class="thumb normal" src="./images/IMG_1930.jpg" width="200" height="200" onmouseover="preview(this)">
+                   <img id="5" class="thumb normal" src="./images/IMG_1931.jpg" width="200" height="200" onmouseover="preview(this)">
+                   <img id="6" class="thumb normal" src="./images/IMG_1932.jpg" width="200" height="200" onmouseover="preview(this)">
+                   <script>
+
+                    var lastImg = 1; //Set initial thumbnail and preview
+                    document.getElementById(0).src = document.getElementById(lastImg).src;
+                    document.getElementById(lastImg).className = "thumb selected";
+                
+                    function preview(img) {
+                        document.getElementById(lastImg).className = "thumb normal";
+                        img.className = "thumb selected";
+                        document.getElementById(0).src = img.src;
+                        lastImg = img.id
+                    }
+                </script>
+               </div>
+           </article> 
+           <p> <div>
+               <p>With your help and the help of others, he hopes to help orphans in Haiti on a consistent basis.</a>
+            </p>
+           </div>
+                
+             </p>
+    
+   
+    <footer>
+        <p><a href="sitemap.html">SiteMap</a> <a href="contact.html">Contact</a> <a href="gallery.html">Gallery</a> Copyright &copy;2021</p>
+    </footer>
+</body>
+</html>
